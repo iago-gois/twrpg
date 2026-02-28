@@ -1,172 +1,172 @@
 {
-    "common": {
-        "loading": "Carregando...",
-        "error": "Algo deu errado",
-        "notFound": "Página não encontrada",
-        "comingSoon": "Em breve",
-        "search": "Buscar...",
-        "noResults": "Nenhum resultado encontrado",
-        "back": "Voltar",
-        "save": "Salvar",
-        "cancel": "Cancelar",
-        "delete": "Excluir",
-        "edit": "Editar",
-        "create": "Criar",
-        "actions": "Ações",
-        "viewAll": "Ver tudo"
-    },
-    "nav": {
-        "home": "Início",
-        "database": "Banco de Dados",
-        "download": "Download",
-        "admin": "Admin",
-        "classes": "Classes",
-        "builds": "Builds",
-        "items": "Itens",
-        "recipes": "Receitas",
-        "skills": "Habilidades",
-        "monsters": "Monstros",
-        "bosses": "Chefes",
-        "dungeons": "Masmorras",
-        "npcs": "NPCs",
-        "quests": "Missões",
-        "guides": "Guias"
-    },
-    "home": {
-        "title": "TWRPG Database",
-        "subtitle": "O banco de dados completo para The World RPG",
-        "description": "Explore classes, itens, builds, monstros, masmorras e muito mais.",
-        "latestUpdates": "Últimas Atualizações",
-        "quickLinks": "Links Rápidos",
-        "exploreDatabase": "Explorar Banco de Dados",
-        "downloadMap": "Baixar Mapa",
-        "generalInfo": "Informações Gerais",
-        "mapVersion": "Versão do Mapa",
-        "mapPreview": "Prévia do Mapa",
-        "guidesAndStrategies": "Guias de Chefes e Progressão",
-        "community": "Comunidade",
-        "joinDiscord": "Entrar no servidor do Discord",
-        "adminContacts": "Contatos dos admins no Discord"
-    },
-    "database": {
-        "title": "Banco de Dados",
-        "description": "Explore todos os dados do jogo",
-        "classes": {
-            "title": "Classes",
-            "description": "Explore todas as classes jogáveis e suas habilidades"
-        },
-        "builds": {
-            "title": "Builds",
-            "description": "Builds da comunidade e configurações de habilidades"
-        },
-        "items": {
-            "title": "Itens",
-            "description": "Equipamentos, consumíveis e materiais"
-        },
-        "recipes": {
-            "title": "Receitas",
-            "description": "Receitas de criação e ingredientes"
-        },
-        "skills": {
-            "title": "Habilidades",
-            "description": "Todas as habilidades e árvores de habilidades"
-        },
-        "monsters": {
-            "title": "Monstros",
-            "description": "Monstros regulares com estatísticas e drops"
-        },
-        "bosses": {
-            "title": "Chefes",
-            "description": "Encontros com chefes, estratégias e loot"
-        },
-        "dungeons": {
-            "title": "Masmorras",
-            "description": "Guias de masmorras e requisitos"
-        },
-        "npcs": {
-            "title": "NPCs",
-            "description": "Personagens não-jogáveis e lojas"
-        },
-        "quests": {
-            "title": "Missões",
-            "description": "Guias de missões e recompensas"
-        },
-        "guides": {
-            "title": "Guias",
-            "description": "Guias da comunidade e artigos wiki"
-        }
-    },
-    "download": {
-        "title": "Baixar Mapa",
-        "description": "Baixe o arquivo de mapa TWRPG mais recente",
-        "latestVersion": "Última Versão",
-        "downloadButton": "Baixar .w3x"
-    },
-    "admin": {
-        "title": "Painel Admin",
-        "dashboard": "Painel",
-        "login": "Entrar",
-        "logout": "Sair",
-        "users": "Usuários",
-        "manageContent": "Gerenciar Conteúdo"
-    },
-    "landing": {
-        "serverOnline": "Servidor Online — 127 jogadores",
-        "heroDescription": "Embarque em uma jornada épica pelo mundo de Warcraft. Escolha sua classe, forje itens lendários, conquiste masmorras e torne-se o herói supremo.",
-        "downloadMap": "Baixar Mapa",
-        "browseHeroes": "Ver Heróis",
-        "statClasses": "Classes",
-        "statItems": "Itens",
-        "statPlayers": "Jogadores",
-        "spotlight": {
-            "label": "Escolha Seu Caminho",
-            "title": "Destaque de Heróis",
-            "paladin": "Paladino",
-            "tank": "Tanque",
-            "paladinDesc": "Um guerreiro sagrado em armadura reluzente. O Paladino se destaca em absorver dano e proteger aliados com escudos divinos e auras de cura.",
-            "archmage": "Arquimago",
-            "mage": "Mago",
-            "archmageDesc": "Um mestre das artes arcanas. O Arquimago desencadeia feitiços devastadores à distância, controlando o campo de batalha com gelo, fogo e relâmpagos.",
-            "ranger": "Patrulheiro",
-            "dps": "DPS à Distância",
-            "rangerDesc": "Um atirador rápido e mortal. O Patrulheiro ataca das sombras com flechas precisas e armadilhas, destacando-se em eliminar alvos.",
-            "berserker": "Berserker",
-            "melee": "DPS Corpo a Corpo",
-            "berserkerDesc": "Uma força imparável de fúria. O Berserker avança na batalha com ataques devastadores em área, ficando mais forte quanto mais a luta dura.",
-            "strength": "Força",
-            "agility": "Agilidade",
-            "intellect": "Intelecto"
-        },
-        "news": {
-            "label": "Últimas Notícias",
-            "title": "Novidades",
-            "viewAll": "Ver todas as notícias",
-            "readMore": "Leia mais",
-            "tagUpdate": "Atualização",
-            "tagEvent": "Evento",
-            "tagGuide": "Guia",
-            "news1Title": "Patch v3.2 — Nova Masmorra Lançada",
-            "news1Excerpt": "Explore a Cidadela Congelada, uma nova masmorra desafiadora com mecânicas de chefe únicas e drops lendários.",
-            "news2Title": "Torneio de Primavera 2026",
-            "news2Excerpt": "Inscreva-se agora no Torneio de Primavera TWRPG anual. Compita por glória, itens raros e o título de campeão.",
-            "news3Title": "Guia para Iniciantes Atualizado",
-            "news3Excerpt": "Nosso guia completo para iniciantes foi atualizado com novas recomendações de classe e estratégias de nivelamento."
-        },
-        "quickLinks": {
-            "label": "Acesso Rápido",
-            "title": "Explore o TWRPG",
-            "downloadMap": "Baixar Mapa",
-            "downloadMapDesc": "Obtenha o arquivo .w3x mais recente e comece a jogar hoje.",
-            "guides": "Guias",
-            "guidesDesc": "Guias da comunidade, passo-a-passos e artigos wiki.",
-            "builds": "Builds",
-            "buildsDesc": "Melhores builds da comunidade e configurações de habilidades.",
-            "classes": "Classes",
-            "classesDesc": "Todas as classes jogáveis com habilidades e estatísticas.",
-            "dungeons": "Masmorras",
-            "dungeonsDesc": "Guias de masmorras com requisitos e estratégias.",
-            "discord": "Discord",
-            "discordDesc": "Junte-se à comunidade para ajuda, eventos e novidades."
-        }
-    }
+	"common": {
+		"loading": "Carregando...",
+		"error": "Algo deu errado",
+		"notFound": "Página não encontrada",
+		"comingSoon": "Em breve",
+		"search": "Buscar...",
+		"noResults": "Nenhum resultado encontrado",
+		"back": "Voltar",
+		"save": "Salvar",
+		"cancel": "Cancelar",
+		"delete": "Excluir",
+		"edit": "Editar",
+		"create": "Criar",
+		"actions": "Ações",
+		"viewAll": "Ver tudo"
+	},
+	"nav": {
+		"home": "Início",
+		"database": "Banco de Dados",
+		"download": "Download",
+		"admin": "Admin",
+		"classes": "Classes",
+		"builds": "Builds",
+		"items": "Itens",
+		"recipes": "Receitas",
+		"skills": "Habilidades",
+		"monsters": "Monstros",
+		"bosses": "Chefes",
+		"dungeons": "Masmorras",
+		"npcs": "NPCs",
+		"quests": "Missões",
+		"guides": "Guias"
+	},
+	"home": {
+		"title": "TWRPG Database",
+		"subtitle": "O banco de dados completo para The World RPG",
+		"description": "Explore classes, itens, builds, monstros, masmorras e muito mais.",
+		"latestUpdates": "Últimas Atualizações",
+		"quickLinks": "Links Rápidos",
+		"exploreDatabase": "Explorar Banco de Dados",
+		"downloadMap": "Baixar Mapa",
+		"generalInfo": "Informações Gerais",
+		"mapVersion": "Versão do Mapa",
+		"mapPreview": "Prévia do Mapa",
+		"guidesAndStrategies": "Guias de Chefes e Progressão",
+		"community": "Comunidade",
+		"joinDiscord": "Entrar no servidor do Discord",
+		"adminContacts": "Contatos dos admins no Discord"
+	},
+	"database": {
+		"title": "Banco de Dados",
+		"description": "Explore todos os dados do jogo",
+		"classes": {
+			"title": "Classes",
+			"description": "Explore todas as classes jogáveis e suas habilidades"
+		},
+		"builds": {
+			"title": "Builds",
+			"description": "Builds da comunidade e configurações de habilidades"
+		},
+		"items": {
+			"title": "Itens",
+			"description": "Equipamentos, consumíveis e materiais"
+		},
+		"recipes": {
+			"title": "Receitas",
+			"description": "Receitas de criação e ingredientes"
+		},
+		"skills": {
+			"title": "Habilidades",
+			"description": "Todas as habilidades e árvores de habilidades"
+		},
+		"monsters": {
+			"title": "Monstros",
+			"description": "Monstros regulares com estatísticas e drops"
+		},
+		"bosses": {
+			"title": "Chefes",
+			"description": "Encontros com chefes, estratégias e loot"
+		},
+		"dungeons": {
+			"title": "Masmorras",
+			"description": "Guias de masmorras e requisitos"
+		},
+		"npcs": {
+			"title": "NPCs",
+			"description": "Personagens não-jogáveis e lojas"
+		},
+		"quests": {
+			"title": "Missões",
+			"description": "Guias de missões e recompensas"
+		},
+		"guides": {
+			"title": "Guias",
+			"description": "Guias da comunidade e artigos wiki"
+		}
+	},
+	"download": {
+		"title": "Baixar Mapa",
+		"description": "Baixe o arquivo de mapa TWRPG mais recente",
+		"latestVersion": "Última Versão",
+		"downloadButton": "Baixar .w3x"
+	},
+	"admin": {
+		"title": "Painel Admin",
+		"dashboard": "Painel",
+		"login": "Entrar",
+		"logout": "Sair",
+		"users": "Usuários",
+		"manageContent": "Gerenciar Conteúdo"
+	},
+	"landing": {
+		"serverOnline": "Servidor Online — 127 jogadores",
+		"heroDescription": "Embarque em uma jornada épica pelo mundo de Warcraft. Escolha sua classe, forje itens lendários, conquiste masmorras e torne-se o herói supremo.",
+		"downloadMap": "Baixar Mapa",
+		"browseHeroes": "Ver Heróis",
+		"statClasses": "Classes",
+		"statItems": "Itens",
+		"statPlayers": "Jogadores",
+		"spotlight": {
+			"label": "Escolha Seu Caminho",
+			"title": "Destaque de Heróis",
+			"paladin": "Paladino",
+			"tank": "Tanque",
+			"paladinDesc": "Um guerreiro sagrado em armadura reluzente. O Paladino se destaca em absorver dano e proteger aliados com escudos divinos e auras de cura.",
+			"archmage": "Arquimago",
+			"mage": "Mago",
+			"archmageDesc": "Um mestre das artes arcanas. O Arquimago desencadeia feitiços devastadores à distância, controlando o campo de batalha com gelo, fogo e relâmpagos.",
+			"ranger": "Patrulheiro",
+			"dps": "DPS à Distância",
+			"rangerDesc": "Um atirador rápido e mortal. O Patrulheiro ataca das sombras com flechas precisas e armadilhas, destacando-se em eliminar alvos.",
+			"berserker": "Berserker",
+			"melee": "DPS Corpo a Corpo",
+			"berserkerDesc": "Uma força imparável de fúria. O Berserker avança na batalha com ataques devastadores em área, ficando mais forte quanto mais a luta dura.",
+			"strength": "Força",
+			"agility": "Agilidade",
+			"intellect": "Intelecto"
+		},
+		"news": {
+			"label": "Últimas Notícias",
+			"title": "Novidades",
+			"viewAll": "Ver todas as notícias",
+			"readMore": "Leia mais",
+			"tagUpdate": "Atualização",
+			"tagEvent": "Evento",
+			"tagGuide": "Guia",
+			"news1Title": "Patch v3.2 — Nova Masmorra Lançada",
+			"news1Excerpt": "Explore a Cidadela Congelada, uma nova masmorra desafiadora com mecânicas de chefe únicas e drops lendários.",
+			"news2Title": "Torneio de Primavera 2026",
+			"news2Excerpt": "Inscreva-se agora no Torneio de Primavera TWRPG anual. Compita por glória, itens raros e o título de campeão.",
+			"news3Title": "Guia para Iniciantes Atualizado",
+			"news3Excerpt": "Nosso guia completo para iniciantes foi atualizado com novas recomendações de classe e estratégias de nivelamento."
+		},
+		"quickLinks": {
+			"label": "Acesso Rápido",
+			"title": "Explore o TWRPG",
+			"downloadMap": "Baixar Mapa",
+			"downloadMapDesc": "Obtenha o arquivo .w3x mais recente e comece a jogar hoje.",
+			"guides": "Guias",
+			"guidesDesc": "Guias da comunidade, passo-a-passos e artigos wiki.",
+			"builds": "Builds",
+			"buildsDesc": "Melhores builds da comunidade e configurações de habilidades.",
+			"classes": "Classes",
+			"classesDesc": "Todas as classes jogáveis com habilidades e estatísticas.",
+			"dungeons": "Masmorras",
+			"dungeonsDesc": "Guias de masmorras com requisitos e estratégias.",
+			"discord": "Discord",
+			"discordDesc": "Junte-se à comunidade para ajuda, eventos e novidades."
+		}
+	}
 }

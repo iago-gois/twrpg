@@ -1,172 +1,172 @@
 {
-    "common": {
-        "loading": "Loading...",
-        "error": "Something went wrong",
-        "notFound": "Page not found",
-        "comingSoon": "Coming soon",
-        "search": "Search...",
-        "noResults": "No results found",
-        "back": "Back",
-        "save": "Save",
-        "cancel": "Cancel",
-        "delete": "Delete",
-        "edit": "Edit",
-        "create": "Create",
-        "actions": "Actions",
-        "viewAll": "View all"
-    },
-    "nav": {
-        "home": "Home",
-        "database": "Database",
-        "download": "Download",
-        "admin": "Admin",
-        "classes": "Classes",
-        "builds": "Builds",
-        "items": "Items",
-        "recipes": "Recipes",
-        "skills": "Skills",
-        "monsters": "Monsters",
-        "bosses": "Bosses",
-        "dungeons": "Dungeons",
-        "npcs": "NPCs",
-        "quests": "Quests",
-        "guides": "Guides"
-    },
-    "home": {
-        "title": "TWRPG Database",
-        "subtitle": "The complete database for The World RPG",
-        "description": "Browse classes, items, builds, monsters, dungeons, and more.",
-        "latestUpdates": "Latest Updates",
-        "quickLinks": "Quick Links",
-        "exploreDatabase": "Explore Database",
-        "downloadMap": "Download Map",
-        "generalInfo": "General Info",
-        "mapVersion": "Map Version",
-        "mapPreview": "Map Preview",
-        "guidesAndStrategies": "Boss & Progression Guides",
-        "community": "Community",
-        "joinDiscord": "Join our Discord server",
-        "adminContacts": "Admin contacts on Discord"
-    },
-    "database": {
-        "title": "Database",
-        "description": "Browse all game data",
-        "classes": {
-            "title": "Classes",
-            "description": "Explore all playable classes and their abilities"
-        },
-        "builds": {
-            "title": "Builds",
-            "description": "Community builds and skill setups"
-        },
-        "items": {
-            "title": "Items",
-            "description": "Equipment, consumables, and materials"
-        },
-        "recipes": {
-            "title": "Recipes",
-            "description": "Crafting recipes and ingredients"
-        },
-        "skills": {
-            "title": "Skills",
-            "description": "All skills and skill trees"
-        },
-        "monsters": {
-            "title": "Monsters",
-            "description": "Regular monsters with stats and drops"
-        },
-        "bosses": {
-            "title": "Bosses",
-            "description": "Boss encounters with strategies and loot"
-        },
-        "dungeons": {
-            "title": "Dungeons",
-            "description": "Dungeon guides and requirements"
-        },
-        "npcs": {
-            "title": "NPCs",
-            "description": "Non-player characters and shops"
-        },
-        "quests": {
-            "title": "Quests",
-            "description": "Quest walkthroughs and rewards"
-        },
-        "guides": {
-            "title": "Guides",
-            "description": "Community guides and wiki articles"
-        }
-    },
-    "download": {
-        "title": "Download Map",
-        "description": "Download the latest TWRPG map file",
-        "latestVersion": "Latest Version",
-        "downloadButton": "Download .w3x"
-    },
-    "admin": {
-        "title": "Admin Panel",
-        "dashboard": "Dashboard",
-        "login": "Login",
-        "logout": "Logout",
-        "users": "Users",
-        "manageContent": "Manage Content"
-    },
-    "landing": {
-        "serverOnline": "Server Online — 127 players",
-        "heroDescription": "Embark on an epic journey through the world of Warcraft. Choose your class, forge legendary items, conquer dungeons, and become the ultimate hero.",
-        "downloadMap": "Download Map",
-        "browseHeroes": "Browse Heroes",
-        "statClasses": "Classes",
-        "statItems": "Items",
-        "statPlayers": "Players",
-        "spotlight": {
-            "label": "Choose Your Path",
-            "title": "Hero Spotlight",
-            "paladin": "Paladin",
-            "tank": "Tank",
-            "paladinDesc": "A holy warrior clad in shining armor. The Paladin excels at absorbing damage and protecting allies with divine shields and healing auras.",
-            "archmage": "Archmage",
-            "mage": "Mage",
-            "archmageDesc": "A master of the arcane arts. The Archmage unleashes devastating spells from afar, controlling the battlefield with frost, fire, and lightning.",
-            "ranger": "Ranger",
-            "dps": "Ranged DPS",
-            "rangerDesc": "A swift and deadly marksman. The Ranger strikes from the shadows with precise arrows and traps, excelling at picking off targets.",
-            "berserker": "Berserker",
-            "melee": "Melee DPS",
-            "berserkerDesc": "An unstoppable force of rage. The Berserker charges into battle with devastating cleave attacks, growing stronger the longer the fight lasts.",
-            "strength": "Strength",
-            "agility": "Agility",
-            "intellect": "Intellect"
-        },
-        "news": {
-            "label": "Latest News",
-            "title": "What's New",
-            "viewAll": "View all news",
-            "readMore": "Read more",
-            "tagUpdate": "Update",
-            "tagEvent": "Event",
-            "tagGuide": "Guide",
-            "news1Title": "Patch v3.2 — New Dungeon Released",
-            "news1Excerpt": "Explore the Frozen Citadel, a challenging new dungeon with unique boss mechanics and legendary loot drops.",
-            "news2Title": "Spring Tournament 2026",
-            "news2Excerpt": "Register now for the annual TWRPG Spring Tournament. Compete for glory, rare items, and the champion title.",
-            "news3Title": "Beginner's Guide Updated",
-            "news3Excerpt": "Our comprehensive beginner's guide has been refreshed with new class recommendations and leveling strategies."
-        },
-        "quickLinks": {
-            "label": "Quick Access",
-            "title": "Explore TWRPG",
-            "downloadMap": "Download Map",
-            "downloadMapDesc": "Get the latest .w3x map file and start playing today.",
-            "guides": "Guides",
-            "guidesDesc": "Community guides, walkthroughs, and wiki articles.",
-            "builds": "Builds",
-            "buildsDesc": "Top-rated community builds and skill setups.",
-            "classes": "Classes",
-            "classesDesc": "All playable classes with abilities and stats.",
-            "dungeons": "Dungeons",
-            "dungeonsDesc": "Dungeon guides with requirements and strategies.",
-            "discord": "Discord",
-            "discordDesc": "Join our community for help, events, and news."
-        }
-    }
+	"common": {
+		"loading": "Loading...",
+		"error": "Something went wrong",
+		"notFound": "Page not found",
+		"comingSoon": "Coming soon",
+		"search": "Search...",
+		"noResults": "No results found",
+		"back": "Back",
+		"save": "Save",
+		"cancel": "Cancel",
+		"delete": "Delete",
+		"edit": "Edit",
+		"create": "Create",
+		"actions": "Actions",
+		"viewAll": "View all"
+	},
+	"nav": {
+		"home": "Home",
+		"database": "Database",
+		"download": "Download",
+		"admin": "Admin",
+		"classes": "Classes",
+		"builds": "Builds",
+		"items": "Items",
+		"recipes": "Recipes",
+		"skills": "Skills",
+		"monsters": "Monsters",
+		"bosses": "Bosses",
+		"dungeons": "Dungeons",
+		"npcs": "NPCs",
+		"quests": "Quests",
+		"guides": "Guides"
+	},
+	"home": {
+		"title": "TWRPG Database",
+		"subtitle": "The complete database for The World RPG",
+		"description": "Browse classes, items, builds, monsters, dungeons, and more.",
+		"latestUpdates": "Latest Updates",
+		"quickLinks": "Quick Links",
+		"exploreDatabase": "Explore Database",
+		"downloadMap": "Download Map",
+		"generalInfo": "General Info",
+		"mapVersion": "Map Version",
+		"mapPreview": "Map Preview",
+		"guidesAndStrategies": "Boss & Progression Guides",
+		"community": "Community",
+		"joinDiscord": "Join our Discord server",
+		"adminContacts": "Admin contacts on Discord"
+	},
+	"database": {
+		"title": "Database",
+		"description": "Browse all game data",
+		"classes": {
+			"title": "Classes",
+			"description": "Explore all playable classes and their abilities"
+		},
+		"builds": {
+			"title": "Builds",
+			"description": "Community builds and skill setups"
+		},
+		"items": {
+			"title": "Items",
+			"description": "Equipment, consumables, and materials"
+		},
+		"recipes": {
+			"title": "Recipes",
+			"description": "Crafting recipes and ingredients"
+		},
+		"skills": {
+			"title": "Skills",
+			"description": "All skills and skill trees"
+		},
+		"monsters": {
+			"title": "Monsters",
+			"description": "Regular monsters with stats and drops"
+		},
+		"bosses": {
+			"title": "Bosses",
+			"description": "Boss encounters with strategies and loot"
+		},
+		"dungeons": {
+			"title": "Dungeons",
+			"description": "Dungeon guides and requirements"
+		},
+		"npcs": {
+			"title": "NPCs",
+			"description": "Non-player characters and shops"
+		},
+		"quests": {
+			"title": "Quests",
+			"description": "Quest walkthroughs and rewards"
+		},
+		"guides": {
+			"title": "Guides",
+			"description": "Community guides and wiki articles"
+		}
+	},
+	"download": {
+		"title": "Download Map",
+		"description": "Download the latest TWRPG map file",
+		"latestVersion": "Latest Version",
+		"downloadButton": "Download .w3x"
+	},
+	"admin": {
+		"title": "Admin Panel",
+		"dashboard": "Dashboard",
+		"login": "Login",
+		"logout": "Logout",
+		"users": "Users",
+		"manageContent": "Manage Content"
+	},
+	"landing": {
+		"serverOnline": "Server Online — 127 players",
+		"heroDescription": "Embark on an epic journey through the world of Warcraft. Choose your class, forge legendary items, conquer dungeons, and become the ultimate hero.",
+		"downloadMap": "Download Map",
+		"browseHeroes": "Browse Heroes",
+		"statClasses": "Classes",
+		"statItems": "Items",
+		"statPlayers": "Players",
+		"spotlight": {
+			"label": "Choose Your Path",
+			"title": "Hero Spotlight",
+			"paladin": "Paladin",
+			"tank": "Tank",
+			"paladinDesc": "A holy warrior clad in shining armor. The Paladin excels at absorbing damage and protecting allies with divine shields and healing auras.",
+			"archmage": "Archmage",
+			"mage": "Mage",
+			"archmageDesc": "A master of the arcane arts. The Archmage unleashes devastating spells from afar, controlling the battlefield with frost, fire, and lightning.",
+			"ranger": "Ranger",
+			"dps": "Ranged DPS",
+			"rangerDesc": "A swift and deadly marksman. The Ranger strikes from the shadows with precise arrows and traps, excelling at picking off targets.",
+			"berserker": "Berserker",
+			"melee": "Melee DPS",
+			"berserkerDesc": "An unstoppable force of rage. The Berserker charges into battle with devastating cleave attacks, growing stronger the longer the fight lasts.",
+			"strength": "Strength",
+			"agility": "Agility",
+			"intellect": "Intellect"
+		},
+		"news": {
+			"label": "Latest News",
+			"title": "What's New",
+			"viewAll": "View all news",
+			"readMore": "Read more",
+			"tagUpdate": "Update",
+			"tagEvent": "Event",
+			"tagGuide": "Guide",
+			"news1Title": "Patch v3.2 — New Dungeon Released",
+			"news1Excerpt": "Explore the Frozen Citadel, a challenging new dungeon with unique boss mechanics and legendary loot drops.",
+			"news2Title": "Spring Tournament 2026",
+			"news2Excerpt": "Register now for the annual TWRPG Spring Tournament. Compete for glory, rare items, and the champion title.",
+			"news3Title": "Beginner's Guide Updated",
+			"news3Excerpt": "Our comprehensive beginner's guide has been refreshed with new class recommendations and leveling strategies."
+		},
+		"quickLinks": {
+			"label": "Quick Access",
+			"title": "Explore TWRPG",
+			"downloadMap": "Download Map",
+			"downloadMapDesc": "Get the latest .w3x map file and start playing today.",
+			"guides": "Guides",
+			"guidesDesc": "Community guides, walkthroughs, and wiki articles.",
+			"builds": "Builds",
+			"buildsDesc": "Top-rated community builds and skill setups.",
+			"classes": "Classes",
+			"classesDesc": "All playable classes with abilities and stats.",
+			"dungeons": "Dungeons",
+			"dungeonsDesc": "Dungeon guides with requirements and strategies.",
+			"discord": "Discord",
+			"discordDesc": "Join our community for help, events, and news."
+		}
+	}
 }

@@ -5,28 +5,28 @@ import { useRouter, usePathname } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 
 const LOCALE_LABELS = {
-    en: "🇺🇸 EN",
-    pt: "🇧🇷 PT",
+	en: "🇺🇸 EN",
+	pt: "🇧🇷 PT",
 } as const;
 
 export function LocaleSwitcher() {
-    const locale = useLocale();
-    const router = useRouter();
-    const pathname = usePathname();
+	const locale = useLocale();
+	const router = useRouter();
+	const pathname = usePathname();
 
-    function handleSwitch() {
-        const nextLocale = locale === "en" ? "pt" : "en";
-        router.replace(pathname, { locale: nextLocale });
-    }
+	function handleSwitch() {
+		const nextLocale = locale === "en" ? "pt" : "en";
+		router.replace(pathname, { locale: nextLocale });
+	}
 
-    return (
-        <Button
-            variant="ghost"
-            size="sm"
-            onClick={handleSwitch}
-            className="cursor-pointer transition-transform active:scale-95"
-        >
-            {LOCALE_LABELS[locale as keyof typeof LOCALE_LABELS]}
-        </Button>
-    );
+	return (
+		<Button
+			variant="ghost"
+			size="sm"
+			onClick={handleSwitch}
+			className="cursor-pointer transition-transform active:scale-95"
+		>
+			{LOCALE_LABELS[locale as keyof typeof LOCALE_LABELS]}
+		</Button>
+	);
 }

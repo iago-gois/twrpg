@@ -1,15 +1,15 @@
 import { useTranslations } from "next-intl";
 
 export default function GuidesPage() {
-    const t = useTranslations("database.guides");
+	const t = useTranslations("database.guides");
 
-    return (
-        <div>
-            <h1 className="text-3xl font-bold">{t("title")}</h1>
-            <p className="mt-2 text-muted-foreground">{t("description")}</p>
-            <div className="mt-8 rounded-lg border border-dashed p-12 text-center text-muted-foreground">
-                {t("title")} — Coming soon
-            </div>
-        </div>
-    );
+	return (
+		<div>
+			<h1 className="text-3xl font-bold">{t("title")}</h1>
+			<p className="mt-2 text-muted-foreground">{t("description")}</p>
+			<div className="mt-8 rounded-lg border border-dashed p-12 text-center text-muted-foreground">
+				{t("title")} — Coming soon
+			</div>
+		</div>
+	);
 }
