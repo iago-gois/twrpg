@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Cinzel, Inter } from "next/font/google";
 import "./globals.css";
-import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
+import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/constants";
 
 const cinzel = Cinzel({
 	variable: "--font-serif",
@@ -32,7 +32,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html suppressHydrationWarning>
+		<html suppressHydrationWarning lang="en">
 			<body
 				className={`${cinzel.variable} ${inter.variable} font-sans antialiased`}
 			>

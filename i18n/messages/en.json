@@ -17,20 +17,14 @@
 	},
 	"nav": {
 		"home": "Home",
-		"database": "Database",
-		"download": "Download",
 		"admin": "Admin",
 		"classes": "Classes",
-		"builds": "Builds",
 		"items": "Items",
-		"recipes": "Recipes",
-		"skills": "Skills",
 		"monsters": "Monsters",
 		"bosses": "Bosses",
-		"dungeons": "Dungeons",
 		"npcs": "NPCs",
-		"quests": "Quests",
-		"guides": "Guides"
+		"guides": "Guides",
+		"download": "Download Map"
 	},
 	"home": {
 		"title": "TWRPG Database",

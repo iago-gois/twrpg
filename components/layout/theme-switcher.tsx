@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { Laptop, Moon, Sun } from "lucide-react";
+import { useCallback, useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
 	DropdownMenu,
@@ -20,6 +20,20 @@ export function ThemeSwitcher() {
 	const [theme, setTheme] = useState<ThemePreference>("system");
 	const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>("light");
 	const [mounted, setMounted] = useState(false);
+
+	const applyTheme = useCallback(
+		(nextTheme: ThemePreference, prefersDark: boolean) => {
+			const nextResolvedTheme: ResolvedTheme =
+				nextTheme === "system" ? (prefersDark ? "dark" : "light") : nextTheme;
+
+			document.documentElement.classList.toggle(
+				"dark",
+				nextResolvedTheme === "dark",
+			);
+			setResolvedTheme(nextResolvedTheme);
+		},
+		[],
+	);
 
 	useEffect(() => {
 		const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -49,18 +63,7 @@ export function ThemeSwitcher() {
 		return () => {
 			mediaQuery.removeEventListener("change", handleSystemThemeChange);
 		};
-	}, []);
-
-	function applyTheme(nextTheme: ThemePreference, prefersDark: boolean) {
-		const nextResolvedTheme: ResolvedTheme =
-			nextTheme === "system" ? (prefersDark ? "dark" : "light") : nextTheme;
-
-		document.documentElement.classList.toggle(
-			"dark",
-			nextResolvedTheme === "dark",
-		);
-		setResolvedTheme(nextResolvedTheme);
-	}
+	}, [applyTheme]);
 
 	function handleThemeChange(nextTheme: string) {
 		const selectedTheme = nextTheme as ThemePreference;

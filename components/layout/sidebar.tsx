@@ -1,22 +1,21 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { usePathname } from "@/i18n/navigation";
-import { Link } from "@/i18n/navigation";
-import { DATABASE_SECTIONS } from "@/lib/constants";
 import {
-	Swords,
+	BookOpen,
+	Bug,
+	Castle,
 	Hammer,
+	MapPin,
 	Package,
 	ScrollText,
-	Zap,
-	Bug,
 	Skull,
-	Castle,
+	Swords,
 	Users,
-	MapPin,
-	BookOpen,
+	Zap,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import { DATABASE_SECTIONS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
