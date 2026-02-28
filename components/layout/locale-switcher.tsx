@@ -2,8 +2,12 @@
 
 import { useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
-import { LOCALES } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
+
+const LOCALE_LABELS = {
+    en: "🇺🇸 EN",
+    pt: "🇧🇷 PT",
+} as const;
 
 export function LocaleSwitcher() {
     const locale = useLocale();
@@ -17,7 +21,7 @@ export function LocaleSwitcher() {
 
     return (
         <Button variant="ghost" size="sm" onClick={handleSwitch}>
-            {locale === "en" ? "PT" : "EN"}
+            {LOCALE_LABELS[locale as keyof typeof LOCALE_LABELS]}
         </Button>
     );
 }

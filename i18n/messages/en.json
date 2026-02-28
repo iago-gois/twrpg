@@ -39,7 +39,14 @@
         "latestUpdates": "Latest Updates",
         "quickLinks": "Quick Links",
         "exploreDatabase": "Explore Database",
-        "downloadMap": "Download Map"
+        "downloadMap": "Download Map",
+        "generalInfo": "General Info",
+        "mapVersion": "Map Version",
+        "mapPreview": "Map Preview",
+        "guidesAndStrategies": "Boss & Progression Guides",
+        "community": "Community",
+        "joinDiscord": "Join our Discord server",
+        "adminContacts": "Admin contacts on Discord"
     },
     "database": {
         "title": "Database",

@@ -39,7 +39,14 @@
         "latestUpdates": "Últimas Atualizações",
         "quickLinks": "Links Rápidos",
         "exploreDatabase": "Explorar Banco de Dados",
-        "downloadMap": "Baixar Mapa"
+        "downloadMap": "Baixar Mapa",
+        "generalInfo": "Informações Gerais",
+        "mapVersion": "Versão do Mapa",
+        "mapPreview": "Prévia do Mapa",
+        "guidesAndStrategies": "Guias de Chefes e Progressão",
+        "community": "Comunidade",
+        "joinDiscord": "Entrar no servidor do Discord",
+        "adminContacts": "Contatos dos admins no Discord"
     },
     "database": {
         "title": "Banco de Dados",
