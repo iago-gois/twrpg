@@ -1,5 +1,5 @@
+import { ChevronRight, Download } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Download, ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 
 export function HeroSection() {

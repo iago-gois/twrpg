@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { ChevronLeft, ChevronRight, Shield, Swords, Zap } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Shield, Zap, Swords, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 const HEROES = [
 	{
@@ -65,27 +65,29 @@ export function HeroSpotlight() {
 				{/* Two-column grid */}
 				<div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
 					{/* Left: Hero portrait */}
-					<div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-card">
+					<div className="relative aspect-4/5 overflow-hidden rounded-2xl bg-card">
 						{/* Gradient placeholder for hero image */}
 						<div
-							className={`absolute inset-0 bg-gradient-to-t ${hero.color} to-transparent transition-all duration-700`}
+							className={`absolute inset-0 bg-linear-to-t ${hero.color} to-transparent transition-all duration-700`}
 						/>
 						<div className="absolute inset-0 flex items-center justify-center">
 							<Icon className="h-32 w-32 text-primary/30" />
 						</div>
 
 						{/* Bottom gradient */}
-						<div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-card to-transparent" />
+						<div className="absolute inset-x-0 bottom-0 h-1/3 bg-linear-to-t from-card to-transparent" />
 
 						{/* Navigation arrows */}
 						<div className="absolute bottom-4 left-4 flex gap-2">
 							<button
+								type="button"
 								onClick={prev}
 								className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card/80 text-foreground backdrop-blur-sm transition-colors hover:bg-secondary"
 							>
 								<ChevronLeft className="h-5 w-5" />
 							</button>
 							<button
+								type="button"
 								onClick={next}
 								className="flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card/80 text-foreground backdrop-blur-sm transition-colors hover:bg-secondary"
 							>
@@ -147,12 +149,13 @@ export function HeroSpotlight() {
 
 						{/* Dot navigation */}
 						<div className="mt-6 flex items-center gap-2">
-							{HEROES.map((_, i) => (
+							{HEROES.map((hero) => (
 								<button
-									key={i}
-									onClick={() => setActiveIndex(i)}
+									type="button"
+									key={hero.nameKey}
+									onClick={() => setActiveIndex(HEROES.indexOf(hero))}
 									className={`h-2 rounded-full transition-all ${
-										i === activeIndex
+										HEROES.indexOf(hero) === activeIndex
 											? "w-8 bg-primary"
 											: "w-2 bg-border hover:bg-muted-foreground"
 									}`}
