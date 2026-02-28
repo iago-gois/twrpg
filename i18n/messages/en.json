@@ -1,0 +1,106 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "error": "Something went wrong",
+        "notFound": "Page not found",
+        "comingSoon": "Coming soon",
+        "search": "Search...",
+        "noResults": "No results found",
+        "back": "Back",
+        "save": "Save",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "edit": "Edit",
+        "create": "Create",
+        "actions": "Actions",
+        "viewAll": "View all"
+    },
+    "nav": {
+        "home": "Home",
+        "database": "Database",
+        "download": "Download",
+        "admin": "Admin",
+        "classes": "Classes",
+        "builds": "Builds",
+        "items": "Items",
+        "recipes": "Recipes",
+        "skills": "Skills",
+        "monsters": "Monsters",
+        "bosses": "Bosses",
+        "dungeons": "Dungeons",
+        "npcs": "NPCs",
+        "quests": "Quests",
+        "guides": "Guides"
+    },
+    "home": {
+        "title": "TWRPG Database",
+        "subtitle": "The complete database for The World RPG",
+        "description": "Browse classes, items, builds, monsters, dungeons, and more.",
+        "latestUpdates": "Latest Updates",
+        "quickLinks": "Quick Links",
+        "exploreDatabase": "Explore Database",
+        "downloadMap": "Download Map"
+    },
+    "database": {
+        "title": "Database",
+        "description": "Browse all game data",
+        "classes": {
+            "title": "Classes",
+            "description": "Explore all playable classes and their abilities"
+        },
+        "builds": {
+            "title": "Builds",
+            "description": "Community builds and skill setups"
+        },
+        "items": {
+            "title": "Items",
+            "description": "Equipment, consumables, and materials"
+        },
+        "recipes": {
+            "title": "Recipes",
+            "description": "Crafting recipes and ingredients"
+        },
+        "skills": {
+            "title": "Skills",
+            "description": "All skills and skill trees"
+        },
+        "monsters": {
+            "title": "Monsters",
+            "description": "Regular monsters with stats and drops"
+        },
+        "bosses": {
+            "title": "Bosses",
+            "description": "Boss encounters with strategies and loot"
+        },
+        "dungeons": {
+            "title": "Dungeons",
+            "description": "Dungeon guides and requirements"
+        },
+        "npcs": {
+            "title": "NPCs",
+            "description": "Non-player characters and shops"
+        },
+        "quests": {
+            "title": "Quests",
+            "description": "Quest walkthroughs and rewards"
+        },
+        "guides": {
+            "title": "Guides",
+            "description": "Community guides and wiki articles"
+        }
+    },
+    "download": {
+        "title": "Download Map",
+        "description": "Download the latest TWRPG map file",
+        "latestVersion": "Latest Version",
+        "downloadButton": "Download .w3x"
+    },
+    "admin": {
+        "title": "Admin Panel",
+        "dashboard": "Dashboard",
+        "login": "Login",
+        "logout": "Logout",
+        "users": "Users",
+        "manageContent": "Manage Content"
+    }
+}

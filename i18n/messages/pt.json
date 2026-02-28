@@ -1,0 +1,106 @@
+{
+    "common": {
+        "loading": "Carregando...",
+        "error": "Algo deu errado",
+        "notFound": "Página não encontrada",
+        "comingSoon": "Em breve",
+        "search": "Buscar...",
+        "noResults": "Nenhum resultado encontrado",
+        "back": "Voltar",
+        "save": "Salvar",
+        "cancel": "Cancelar",
+        "delete": "Excluir",
+        "edit": "Editar",
+        "create": "Criar",
+        "actions": "Ações",
+        "viewAll": "Ver tudo"
+    },
+    "nav": {
+        "home": "Início",
+        "database": "Banco de Dados",
+        "download": "Download",
+        "admin": "Admin",
+        "classes": "Classes",
+        "builds": "Builds",
+        "items": "Itens",
+        "recipes": "Receitas",
+        "skills": "Habilidades",
+        "monsters": "Monstros",
+        "bosses": "Chefes",
+        "dungeons": "Masmorras",
+        "npcs": "NPCs",
+        "quests": "Missões",
+        "guides": "Guias"
+    },
+    "home": {
+        "title": "TWRPG Database",
+        "subtitle": "O banco de dados completo para The World RPG",
+        "description": "Explore classes, itens, builds, monstros, masmorras e muito mais.",
+        "latestUpdates": "Últimas Atualizações",
+        "quickLinks": "Links Rápidos",
+        "exploreDatabase": "Explorar Banco de Dados",
+        "downloadMap": "Baixar Mapa"
+    },
+    "database": {
+        "title": "Banco de Dados",
+        "description": "Explore todos os dados do jogo",
+        "classes": {
+            "title": "Classes",
+            "description": "Explore todas as classes jogáveis e suas habilidades"
+        },
+        "builds": {
+            "title": "Builds",
+            "description": "Builds da comunidade e configurações de habilidades"
+        },
+        "items": {
+            "title": "Itens",
+            "description": "Equipamentos, consumíveis e materiais"
+        },
+        "recipes": {
+            "title": "Receitas",
+            "description": "Receitas de criação e ingredientes"
+        },
+        "skills": {
+            "title": "Habilidades",
+            "description": "Todas as habilidades e árvores de habilidades"
+        },
+        "monsters": {
+            "title": "Monstros",
+            "description": "Monstros regulares com estatísticas e drops"
+        },
+        "bosses": {
+            "title": "Chefes",
+            "description": "Encontros com chefes, estratégias e loot"
+        },
+        "dungeons": {
+            "title": "Masmorras",
+            "description": "Guias de masmorras e requisitos"
+        },
+        "npcs": {
+            "title": "NPCs",
+            "description": "Personagens não-jogáveis e lojas"
+        },
+        "quests": {
+            "title": "Missões",
+            "description": "Guias de missões e recompensas"
+        },
+        "guides": {
+            "title": "Guias",
+            "description": "Guias da comunidade e artigos wiki"
+        }
+    },
+    "download": {
+        "title": "Baixar Mapa",
+        "description": "Baixe o arquivo de mapa TWRPG mais recente",
+        "latestVersion": "Última Versão",
+        "downloadButton": "Baixar .w3x"
+    },
+    "admin": {
+        "title": "Painel Admin",
+        "dashboard": "Painel",
+        "login": "Entrar",
+        "logout": "Sair",
+        "users": "Usuários",
+        "manageContent": "Gerenciar Conteúdo"
+    }
+}
