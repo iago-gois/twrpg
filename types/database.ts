@@ -28,8 +28,13 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["classes"]["Row"], "id" | "created_at" | "updated_at">;
-                Update: Partial<Database["public"]["Tables"]["classes"]["Insert"]>;
+                Insert: Omit<
+                    Database["public"]["Tables"]["classes"]["Row"],
+                    "id" | "created_at" | "updated_at"
+                >;
+                Update: Partial<
+                    Database["public"]["Tables"]["classes"]["Insert"]
+                >;
             };
             items: {
                 Row: {
@@ -44,8 +49,13 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["items"]["Row"], "id" | "created_at" | "updated_at">;
-                Update: Partial<Database["public"]["Tables"]["items"]["Insert"]>;
+                Insert: Omit<
+                    Database["public"]["Tables"]["items"]["Row"],
+                    "id" | "created_at" | "updated_at"
+                >;
+                Update: Partial<
+                    Database["public"]["Tables"]["items"]["Insert"]
+                >;
             };
             recipes: {
                 Row: {
@@ -57,8 +67,13 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["recipes"]["Row"], "id" | "created_at" | "updated_at">;
-                Update: Partial<Database["public"]["Tables"]["recipes"]["Insert"]>;
+                Insert: Omit<
+                    Database["public"]["Tables"]["recipes"]["Row"],
+                    "id" | "created_at" | "updated_at"
+                >;
+                Update: Partial<
+                    Database["public"]["Tables"]["recipes"]["Insert"]
+                >;
             };
             skills: {
                 Row: {
@@ -73,8 +88,13 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["skills"]["Row"], "id" | "created_at" | "updated_at">;
-                Update: Partial<Database["public"]["Tables"]["skills"]["Insert"]>;
+                Insert: Omit<
+                    Database["public"]["Tables"]["skills"]["Row"],
+                    "id" | "created_at" | "updated_at"
+                >;
+                Update: Partial<
+                    Database["public"]["Tables"]["skills"]["Insert"]
+                >;
             };
             monsters: {
                 Row: {
@@ -91,8 +111,13 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["monsters"]["Row"], "id" | "created_at" | "updated_at">;
-                Update: Partial<Database["public"]["Tables"]["monsters"]["Insert"]>;
+                Insert: Omit<
+                    Database["public"]["Tables"]["monsters"]["Row"],
+                    "id" | "created_at" | "updated_at"
+                >;
+                Update: Partial<
+                    Database["public"]["Tables"]["monsters"]["Insert"]
+                >;
             };
             dungeons: {
                 Row: {
@@ -105,8 +130,13 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["dungeons"]["Row"], "id" | "created_at" | "updated_at">;
-                Update: Partial<Database["public"]["Tables"]["dungeons"]["Insert"]>;
+                Insert: Omit<
+                    Database["public"]["Tables"]["dungeons"]["Row"],
+                    "id" | "created_at" | "updated_at"
+                >;
+                Update: Partial<
+                    Database["public"]["Tables"]["dungeons"]["Insert"]
+                >;
             };
             npcs: {
                 Row: {
@@ -120,7 +150,10 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["npcs"]["Row"], "id" | "created_at" | "updated_at">;
+                Insert: Omit<
+                    Database["public"]["Tables"]["npcs"]["Row"],
+                    "id" | "created_at" | "updated_at"
+                >;
                 Update: Partial<Database["public"]["Tables"]["npcs"]["Insert"]>;
             };
             quests: {
@@ -134,8 +167,13 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["quests"]["Row"], "id" | "created_at" | "updated_at">;
-                Update: Partial<Database["public"]["Tables"]["quests"]["Insert"]>;
+                Insert: Omit<
+                    Database["public"]["Tables"]["quests"]["Row"],
+                    "id" | "created_at" | "updated_at"
+                >;
+                Update: Partial<
+                    Database["public"]["Tables"]["quests"]["Insert"]
+                >;
             };
             guides: {
                 Row: {
@@ -148,8 +186,13 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["guides"]["Row"], "id" | "created_at" | "updated_at">;
-                Update: Partial<Database["public"]["Tables"]["guides"]["Insert"]>;
+                Insert: Omit<
+                    Database["public"]["Tables"]["guides"]["Row"],
+                    "id" | "created_at" | "updated_at"
+                >;
+                Update: Partial<
+                    Database["public"]["Tables"]["guides"]["Insert"]
+                >;
             };
             builds: {
                 Row: {
@@ -163,8 +206,13 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["builds"]["Row"], "id" | "created_at" | "updated_at">;
-                Update: Partial<Database["public"]["Tables"]["builds"]["Insert"]>;
+                Insert: Omit<
+                    Database["public"]["Tables"]["builds"]["Row"],
+                    "id" | "created_at" | "updated_at"
+                >;
+                Update: Partial<
+                    Database["public"]["Tables"]["builds"]["Insert"]
+                >;
             };
             profiles: {
                 Row: {
@@ -175,8 +223,13 @@ export interface Database {
                     created_at: string;
                     updated_at: string;
                 };
-                Insert: Omit<Database["public"]["Tables"]["profiles"]["Row"], "created_at" | "updated_at">;
-                Update: Partial<Database["public"]["Tables"]["profiles"]["Insert"]>;
+                Insert: Omit<
+                    Database["public"]["Tables"]["profiles"]["Row"],
+                    "created_at" | "updated_at"
+                >;
+                Update: Partial<
+                    Database["public"]["Tables"]["profiles"]["Insert"]
+                >;
             };
         };
         Views: Record<string, never>;

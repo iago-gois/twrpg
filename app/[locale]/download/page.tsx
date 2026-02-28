@@ -1,6 +1,12 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import {
+    Card,
+    CardHeader,
+    CardTitle,
+    CardDescription,
+    CardContent,
+} from "@/components/ui/card";
 
 export default function DownloadPage() {
     const t = useTranslations("download");
@@ -13,7 +19,9 @@ export default function DownloadPage() {
             <Card className="mt-8 max-w-lg">
                 <CardHeader>
                     <CardTitle>{t("latestVersion")}</CardTitle>
-                    <CardDescription>TWRPG v?.?.? — Coming soon</CardDescription>
+                    <CardDescription>
+                        TWRPG v?.?.? — Coming soon
+                    </CardDescription>
                 </CardHeader>
                 <CardContent>
                     <Button disabled>{t("downloadButton")}</Button>

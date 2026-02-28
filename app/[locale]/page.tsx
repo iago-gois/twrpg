@@ -1,7 +1,12 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { DATABASE_SECTIONS } from "@/lib/constants";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import {
+    Card,
+    CardHeader,
+    CardTitle,
+    CardDescription,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
@@ -27,9 +32,7 @@ export default function HomePage() {
                         </Link>
                     </Button>
                     <Button asChild variant="outline" size="lg">
-                        <Link href="/download">
-                            {t("home.downloadMap")}
-                        </Link>
+                        <Link href="/download">{t("home.downloadMap")}</Link>
                     </Button>
                 </div>
             </section>
@@ -51,7 +54,9 @@ export default function HomePage() {
                                         {t(`database.${section.key}.title`)}
                                     </CardTitle>
                                     <CardDescription>
-                                        {t(`database.${section.key}.description`)}
+                                        {t(
+                                            `database.${section.key}.description`,
+                                        )}
                                     </CardDescription>
                                 </CardHeader>
                             </Card>

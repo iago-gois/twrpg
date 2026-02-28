@@ -1,5 +1,6 @@
 export const SITE_NAME = "TWRPG Database";
-export const SITE_DESCRIPTION = "Complete database for The World RPG — classes, items, builds, monsters, dungeons, and more.";
+export const SITE_DESCRIPTION =
+    "Complete database for The World RPG — classes, items, builds, monsters, dungeons, and more.";
 
 export const LOCALES = ["en", "pt"] as const;
 export type Locale = (typeof LOCALES)[number];
