@@ -15,14 +15,10 @@ export function createAdminClient() {
         );
     }
 
-    return createClient(
-        getSupabaseUrl(),
-        serviceRoleKey,
-        {
-            auth: {
-                autoRefreshToken: false,
-                persistSession: false,
-            },
+    return createClient(getSupabaseUrl(), serviceRoleKey, {
+        auth: {
+            autoRefreshToken: false,
+            persistSession: false,
         },
-    );
+    });
 }
