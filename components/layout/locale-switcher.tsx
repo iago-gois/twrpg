@@ -20,7 +20,12 @@ export function LocaleSwitcher() {
     }
 
     return (
-        <Button variant="ghost" size="sm" onClick={handleSwitch}>
+        <Button
+            variant="ghost"
+            size="sm"
+            onClick={handleSwitch}
+            className="cursor-pointer transition-transform active:scale-95"
+        >
             {LOCALE_LABELS[locale as keyof typeof LOCALE_LABELS]}
         </Button>
     );

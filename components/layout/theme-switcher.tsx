@@ -94,6 +94,7 @@ export function ThemeSwitcher() {
                     size="sm"
                     aria-label="Select theme"
                     disabled={!mounted}
+                    className="cursor-pointer transition-transform active:scale-95 data-[state=open]:bg-accent data-[state=open]:text-accent-foreground"
                 >
                     <ThemeIcon className="h-4 w-4" />
                     <span className="ml-2">{themeLabel}</span>

@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cinzel, Inter } from "next/font/google";
 import "./globals.css";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+const cinzel = Cinzel({
+    variable: "--font-serif",
     subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
+const inter = Inter({
+    variable: "--font-sans",
     subsets: ["latin"],
 });
 
@@ -29,7 +29,7 @@ export default function RootLayout({
     return (
         <html suppressHydrationWarning>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${cinzel.variable} ${inter.variable} font-sans antialiased`}
             >
                 {children}
             </body>
