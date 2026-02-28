@@ -19,6 +19,11 @@ export const metadata: Metadata = {
         template: `%s | ${SITE_NAME}`,
     },
     description: SITE_DESCRIPTION,
+    icons: {
+        icon: "/twrpg_icon_white.png",
+        shortcut: "/twrpg_icon_white.png",
+        apple: "/twrpg_icon_white.png",
+    },
 };
 
 export default function RootLayout({
