@@ -1,5 +1,6 @@
 import { ChevronRight, Download } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { DiscordIcon } from "@/components/ui/discord-icon";
 import { Link } from "@/i18n/navigation";
 
 export function HeroSection() {
@@ -23,14 +24,21 @@ export function HeroSection() {
 
 			{/* Content */}
 			<div className="relative z-10 mx-auto max-w-7xl px-4 text-center lg:px-8">
-				{/* Server status badge */}
-				<div className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-2 text-sm text-muted-foreground backdrop-blur-sm">
+				{/* Server status badge button */}
+				<a
+					href="https://discord.gg/cEwPJzZ"
+					target="_blank"
+					rel="noopener noreferrer"
+					title="Click to join our Discord server"
+					className="mb-8 inline-flex cursor-pointer items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-2 text-sm text-muted-foreground backdrop-blur-sm transition-colors hover:bg-card/80 hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+				>
+					<DiscordIcon className="h-4 w-4" />
 					<span className="relative flex h-2 w-2">
 						<span className="absolute inline-flex h-full w-full animate-pulse rounded-full bg-green-400 opacity-75" />
 						<span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
 					</span>
-					{t("serverOnline")}
-				</div>
+					{t("serverOnlineCount")}
+				</a>
 
 				{/* Title */}
 				<h1 className="text-balance font-serif text-5xl font-bold tracking-wide text-foreground sm:text-6xl lg:text-8xl">
@@ -64,7 +72,7 @@ export function HeroSection() {
 				<div className="mx-auto mt-16 grid max-w-lg grid-cols-3 gap-8">
 					<div>
 						<p className="font-serif text-2xl font-bold text-primary sm:text-3xl">
-							50+
+							30+
 						</p>
 						<p className="mt-1 text-sm text-muted-foreground">
 							{t("statClasses")}
@@ -72,7 +80,7 @@ export function HeroSection() {
 					</div>
 					<div>
 						<p className="font-serif text-2xl font-bold text-primary sm:text-3xl">
-							200+
+							700+
 						</p>
 						<p className="mt-1 text-sm text-muted-foreground">
 							{t("statItems")}
