@@ -9,7 +9,10 @@ export function HeroSection() {
         <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
             {/* Background image */}
             <div className="absolute inset-0 z-0">
-                <div className="h-full w-full bg-gradient-to-br from-hero-gradient-from via-hero-gradient-via to-hero-gradient-to" />
+                <div
+                    className="h-full w-full bg-cover bg-center bg-no-repeat"
+                    style={{ backgroundImage: "url('/hero-bg.png')" }}
+                />
             </div>
 
             {/* Dark overlay */}
@@ -31,7 +34,7 @@ export function HeroSection() {
 
                 {/* Title */}
                 <h1 className="text-balance font-serif text-5xl font-bold tracking-wide text-foreground sm:text-6xl lg:text-8xl">
-                    THE WARCRAFT <span className="text-primary">RPG</span>
+                    THE WORLD <span className="text-primary">RPG</span>
                 </h1>
 
                 {/* Description */}
