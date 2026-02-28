@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import { getSupabaseUrl } from "./config";
 
 /**
  * Admin client using the service role key.
@@ -6,9 +7,17 @@ import { createClient } from "@supabase/supabase-js";
  * NEVER expose this on the client.
  */
 export function createAdminClient() {
+    const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+    if (!serviceRoleKey) {
+        throw new Error(
+            "Missing SUPABASE_SERVICE_ROLE_KEY. Admin actions are disabled until this key is configured.",
+        );
+    }
+
     return createClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.SUPABASE_SERVICE_ROLE_KEY!,
+        getSupabaseUrl(),
+        serviceRoleKey,
         {
             auth: {
                 autoRefreshToken: false,
