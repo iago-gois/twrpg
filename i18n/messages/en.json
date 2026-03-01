@@ -26,6 +26,19 @@
 		"guides": "Guides",
 		"download": "Download Map"
 	},
+	"sidebar": {
+		"classes": "Classes",
+		"builds": "Builds",
+		"items": "Items",
+		"recipes": "Recipes",
+		"skills": "Skills",
+		"monsters": "Monsters",
+		"bosses": "Bosses",
+		"dungeons": "Dungeons",
+		"npcs": "NPCs",
+		"quests": "Quests",
+		"guides": "Guides"
+	},
 	"home": {
 		"title": "TWRPG Database",
 		"subtitle": "The complete database for The World RPG",
@@ -105,7 +118,7 @@
 		"manageContent": "Manage Content"
 	},
 	"landing": {
-		"serverOnlineCount": "Discord Online 1000+ members",
+		"serverOnlineCount": "Discord 1000+ members",
 		"heroDescription": "Embark on an epic journey through the world of Warcraft. Choose your class, forge legendary items, conquer dungeons, and become the ultimate hero.",
 		"downloadMap": "Download Map",
 		"browseHeroes": "Browse Heroes",
