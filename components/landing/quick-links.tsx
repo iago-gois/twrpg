@@ -1,13 +1,13 @@
-import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import {
-	Download,
 	BookOpen,
-	Trophy,
-	Users,
+	Download,
 	Map,
 	MessageCircle,
+	Trophy,
+	Users,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { DISCORD_SERVER_URL } from "@/lib/constants";
 
 const LINKS = [
