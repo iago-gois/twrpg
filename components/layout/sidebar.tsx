@@ -33,7 +33,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export function Sidebar() {
-	const t = useTranslations("nav");
+	const t = useTranslations("sidebar");
 	const pathname = usePathname();
 
 	return (
