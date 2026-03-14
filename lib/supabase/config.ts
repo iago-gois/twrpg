@@ -13,12 +13,11 @@ export function getSupabaseUrl() {
 export function getSupabasePublicKey() {
 	const key =
 		process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY ??
-		process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ??
-		process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+		process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
 	if (!key) {
 		throw new Error(
-			"Missing Supabase public key. Set NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY (or NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY / NEXT_PUBLIC_SUPABASE_ANON_KEY).",
+			"Missing Supabase public key. Set NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY (or NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY).",
 		);
 	}
 
