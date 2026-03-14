@@ -1,9 +1,10 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
+import { cache } from "react";
 import { getSupabasePublicKey, getSupabaseUrl } from "./config";
 
-export async function createClient() {
-	const cookieStore = await cookies();
+export const createClient = cache(() => {
+	const cookieStore = cookies();
 
 	return createServerClient(getSupabaseUrl(), getSupabasePublicKey(), {
 		cookies: {
@@ -22,4 +23,4 @@ export async function createClient() {
 			},
 		},
 	});
-}
+});

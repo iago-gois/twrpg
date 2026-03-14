@@ -50,9 +50,9 @@ export function NewsSection() {
 
 				{/* News cards grid */}
 				<div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-					{NEWS_ITEMS.map((item, i) => (
+					{NEWS_ITEMS.map((item) => (
 						<article
-							key={i}
+							key={`${item.date}-${item.titleKey}`}
 							className="group overflow-hidden rounded-xl border border-border bg-card transition-colors hover:border-primary/40"
 						>
 							{/* Image placeholder */}
