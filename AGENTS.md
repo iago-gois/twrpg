@@ -152,6 +152,86 @@
 - When adding DB-backed features, use the correct Supabase client for runtime context.
 - Before finishing substantial changes, run `pnpm check` and `pnpm build`.
 
+## Agent Baselines
+- These baselines are mandatory defaults for AI agents creating or evolving applications in this ecosystem.
+- They extend existing repo rules in this file; if there is a conflict, repository-specific conventions above take precedence.
+
+### Project Architecture and Folder Structure
+- Keep user-facing routes in `app/[locale]/` and keep locale-specific concerns in locale layouts.
+- Use route groups to separate major surfaces (for example marketing vs app/database) when complexity grows.
+- Organize domain logic by feature slice; keep shared platform concerns in `lib/`, shared types in `types/`, and primitives in `components/ui/`.
+- Keep server-only code and secrets in server contexts (`lib/supabase/server.ts`, `lib/supabase/admin.ts`, route handlers, server actions).
+- Refactor incrementally by vertical slice instead of broad directory reshuffles.
+
+### React Component Design (shadcn/ui-Aligned)
+- Default to Server Components and add `"use client"` only for interactivity, browser APIs, or client state.
+- Prefer composition with existing shadcn/ui primitives before adding new primitives; avoid large manual rewrites inside `components/ui/`.
+- Keep components small and single-purpose (layout, data, presentation), with minimal and explicit props.
+- Keep Server Component props serializable and avoid passing heavy nested objects to client boundaries.
+- Favor declarative JSX and avoid effect-driven UI state when values can be derived during render.
+
+### Reusability and Composability
+- Build reusable feature units from small composable parts (`children`, slots, and focused subcomponents) instead of monolith components.
+- Promote shared logic into custom hooks/utilities only after a second real use case.
+- Avoid prop drilling across many levels; prefer local composition first, then narrowly scoped context when needed.
+- Keep feature-specific logic colocated with the feature and extract to shared modules only when truly cross-feature.
+
+### Type Safety and API Design
+- Maintain strict TypeScript safety: avoid `any`, prefer explicit domain types, and use `import type` where applicable.
+- Reuse canonical types from `types/models.ts` and `types/index.ts`; treat `types/database.ts` as generated.
+- Validate untrusted input at boundaries (route handlers, server actions, external APIs) with schema-based validation.
+- Return consistent API payloads with stable shapes (`ok`, `error`, and typed data/error fields).
+- Prefer additive API evolution; avoid breaking response contracts without a migration path.
+
+### Styling Conventions
+- Use Tailwind CSS utilities and existing tokens from `app/globals.css` as the default styling system.
+- Use `cn()` from `@/lib/utils` for conditional class merging.
+- Keep styling mobile-first, responsive, and consistent with existing spacing/typography patterns.
+- Avoid one-off inline styles unless values are truly dynamic and cannot be expressed with utilities/tokens.
+
+### Accessibility
+- Use semantic HTML first; use ARIA only when semantic elements are insufficient.
+- Ensure full keyboard accessibility, visible focus states, and logical tab order for all interactive UI.
+- Provide accessible names for controls and alt text for meaningful images.
+- Maintain sufficient contrast and avoid relying on color alone to communicate state.
+
+### Testing Expectations
+- Minimum validation for all substantial changes: `pnpm check` and `pnpm build`; add `pnpm exec tsc --noEmit` for TS-sensitive work.
+- When a test runner is available, add or update targeted tests for critical logic, regressions, and contract-sensitive behavior.
+- Prefer focused tests near feature boundaries (data transforms, validators, route handlers, and critical UI behavior).
+- For bug fixes, include regression coverage whenever practical.
+
+### Performance Considerations
+- Apply Vercel React best practices by priority: eliminate async waterfalls, optimize bundle size, then improve server/client rendering behavior.
+- Start independent async work early and await late (`Promise.all`, deferred awaits, Suspense boundaries).
+- Reduce client bundle cost with direct imports, conditional/dynamic loading for heavy components, and deferred non-critical third-party code.
+- Minimize server-to-client serialization and fetch only required fields from data sources.
+- Prevent unnecessary rerenders by deriving state in render, using stable dependencies, and memoizing only expensive work.
+
+### Dependency Management
+- Prefer existing dependencies and platform capabilities before introducing new packages.
+- Add new dependencies only with clear justification (bundle impact, maintenance, and security considered).
+- Keep package usage aligned with `pnpm`; do not introduce alternate lockfiles or package managers.
+- Avoid large utility libraries when a small local utility or native API is sufficient.
+
+### Code Quality and Maintainability
+- Keep diffs small, reviewable, and scoped to the requested outcome.
+- Preserve consistent naming conventions and file organization patterns already used in the repository.
+- Remove dead code and avoid speculative abstractions.
+- Handle errors explicitly and log recoverable failures with actionable context.
+
+### Documentation Standards
+- Update docs when behavior, architecture, or developer workflow changes.
+- Keep i18n documentation and message keys synchronized across supported locales.
+- Document new environment variables, setup steps, and operational caveats in repo docs.
+- Write concise rationale in PR descriptions or change notes for non-obvious technical decisions.
+
+### Safe Refactoring and Backwards Compatibility
+- Protect existing public contracts (routes, API responses, shared component props) unless a change is explicitly intended.
+- Prefer additive changes and deprecate in place before removal when consumers may depend on current behavior.
+- Avoid renaming/moving key route segments without verifying locale routing and navigation behavior end-to-end.
+- Validate refactors with quality gates and ensure no regression in i18n parity, build, and type safety.
+
 ## Pre-PR Checklist for Agents
 - Code formatted and lint-clean (`pnpm check` or `pnpm lint` + `pnpm format`).
 - Build succeeds (`pnpm build`).
