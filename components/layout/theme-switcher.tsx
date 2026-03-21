@@ -1,15 +1,8 @@
 "use client";
 
 import { Laptop, Moon, Sun } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuRadioGroup,
-	DropdownMenuRadioItem,
-	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 type ThemePreference = "light" | "dark" | "system";
 type ResolvedTheme = "light" | "dark";
@@ -17,96 +10,74 @@ type ResolvedTheme = "light" | "dark";
 const STORAGE_KEY = "theme";
 
 export function ThemeSwitcher() {
-	const [theme, setTheme] = useState<ThemePreference>("system");
-	const [resolvedTheme, setResolvedTheme] = useState<ResolvedTheme>("light");
-	const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState<ThemePreference>("system");
+  const [systemPrefersDark, setSystemPrefersDark] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-	const applyTheme = useCallback(
-		(nextTheme: ThemePreference, prefersDark: boolean) => {
-			const nextResolvedTheme: ResolvedTheme =
-				nextTheme === "system" ? (prefersDark ? "dark" : "light") : nextTheme;
+  const resolvedTheme: ResolvedTheme =
+    theme === "system" ? (systemPrefersDark ? "dark" : "light") : theme;
 
-			document.documentElement.classList.toggle(
-				"dark",
-				nextResolvedTheme === "dark",
-			);
-			setResolvedTheme(nextResolvedTheme);
-		},
-		[],
-	);
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const storedTheme = localStorage.getItem(STORAGE_KEY);
+    const initialTheme: ThemePreference =
+      storedTheme === "light" || storedTheme === "dark" || storedTheme === "system"
+        ? storedTheme
+        : "system";
 
-	useEffect(() => {
-		const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-		const storedTheme = localStorage.getItem(STORAGE_KEY);
-		const initialTheme: ThemePreference =
-			storedTheme === "light" ||
-			storedTheme === "dark" ||
-			storedTheme === "system"
-				? storedTheme
-				: "system";
+    setTheme(initialTheme);
+    setSystemPrefersDark(mediaQuery.matches);
 
-		applyTheme(initialTheme, mediaQuery.matches);
-		setTheme(initialTheme);
+    const handleSystemThemeChange = (event: MediaQueryListEvent) => {
+      setSystemPrefersDark(event.matches);
+    };
 
-		const handleSystemThemeChange = (event: MediaQueryListEvent) => {
-			const selectedTheme = (localStorage.getItem(STORAGE_KEY) ??
-				"system") as ThemePreference;
+    mediaQuery.addEventListener("change", handleSystemThemeChange);
+    setMounted(true);
 
-			if (selectedTheme === "system") {
-				applyTheme("system", event.matches);
-			}
-		};
+    return () => {
+      mediaQuery.removeEventListener("change", handleSystemThemeChange);
+    };
+  }, []);
 
-		mediaQuery.addEventListener("change", handleSystemThemeChange);
-		setMounted(true);
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", resolvedTheme === "dark");
+  }, [resolvedTheme]);
 
-		return () => {
-			mediaQuery.removeEventListener("change", handleSystemThemeChange);
-		};
-	}, [applyTheme]);
+  function getNextTheme(currentTheme: ThemePreference): ThemePreference {
+    if (currentTheme === "system") return "light";
+    if (currentTheme === "light") return "dark";
+    return "system";
+  }
 
-	function handleThemeChange(nextTheme: string) {
-		const selectedTheme = nextTheme as ThemePreference;
-		const prefersDark = window.matchMedia(
-			"(prefers-color-scheme: dark)",
-		).matches;
+  function handleThemeCycle() {
+    setTheme((currentTheme) => {
+      const nextTheme = getNextTheme(currentTheme);
+      localStorage.setItem(STORAGE_KEY, nextTheme);
+      return nextTheme;
+    });
+  }
 
-		setTheme(selectedTheme);
-		applyTheme(selectedTheme, prefersDark);
-		localStorage.setItem(STORAGE_KEY, selectedTheme);
-	}
+  const ThemeIcon = theme === "system" ? Laptop : resolvedTheme === "dark" ? Moon : Sun;
+  const themeLabel =
+    theme === "system"
+      ? `System (${resolvedTheme === "dark" ? "Dark" : "Light"})`
+      : theme === "dark"
+        ? "Dark"
+        : "Light";
 
-	const ThemeIcon =
-		theme === "system" ? Laptop : resolvedTheme === "dark" ? Moon : Sun;
-	const themeLabel =
-		theme === "system"
-			? `System (${resolvedTheme === "dark" ? "Dark" : "Light"})`
-			: theme === "dark"
-				? "Dark"
-				: "Light";
-
-	return (
-		<DropdownMenu>
-			<DropdownMenuTrigger asChild>
-				<Button
-					variant="ghost"
-					size="sm"
-					aria-label="Select theme"
-					disabled={!mounted}
-					className="cursor-pointer transition-transform active:scale-95 data-[state=open]:bg-accent data-[state=open]:text-accent-foreground"
-				>
-					<ThemeIcon className="h-4 w-4" />
-					<span className="ml-2">{themeLabel}</span>
-				</Button>
-			</DropdownMenuTrigger>
-
-			<DropdownMenuContent align="end">
-				<DropdownMenuRadioGroup value={theme} onValueChange={handleThemeChange}>
-					<DropdownMenuRadioItem value="light">Light</DropdownMenuRadioItem>
-					<DropdownMenuRadioItem value="dark">Dark</DropdownMenuRadioItem>
-					<DropdownMenuRadioItem value="system">System</DropdownMenuRadioItem>
-				</DropdownMenuRadioGroup>
-			</DropdownMenuContent>
-		</DropdownMenu>
-	);
+  return (
+    <Button
+      variant="ghost"
+      size="sm"
+      type="button"
+      aria-label={`Cycle theme (${themeLabel})`}
+      disabled={!mounted}
+      onClick={handleThemeCycle}
+      tooltip={themeLabel}
+      className="cursor-pointer transition-transform active:scale-95"
+    >
+      <ThemeIcon className="h-4 w-4" />
+    </Button>
+  );
 }

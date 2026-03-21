@@ -1,4 +1,5 @@
 import { createClient } from "@supabase/supabase-js";
+import { cache } from "react";
 import { getSupabaseUrl } from "./config";
 
 /**
@@ -6,7 +7,7 @@ import { getSupabaseUrl } from "./config";
  * Only use server-side for admin operations (e.g., creating user accounts).
  * NEVER expose this on the client.
  */
-export function createAdminClient() {
+export const createAdminClient = cache(() => {
 	const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 	if (!serviceRoleKey) {
@@ -21,4 +22,4 @@ export function createAdminClient() {
 			persistSession: false,
 		},
 	});
-}
+});
