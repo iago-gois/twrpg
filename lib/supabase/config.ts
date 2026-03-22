@@ -1,25 +1,23 @@
 export function getSupabaseUrl() {
-	const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 
-	if (!url) {
-		throw new Error(
-			"Missing NEXT_PUBLIC_SUPABASE_URL in environment variables.",
-		);
-	}
+  if (!url) {
+    throw new Error("Missing NEXT_PUBLIC_SUPABASE_URL in environment variables.");
+  }
 
-	return url;
+  return url;
 }
 
 export function getSupabasePublicKey() {
-	const key =
-		process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY ??
-		process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+  const key =
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY ??
+    process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
-	if (!key) {
-		throw new Error(
-			"Missing Supabase public key. Set NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY (or NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY).",
-		);
-	}
+  if (!key) {
+    throw new Error(
+      "Missing Supabase public key. Set NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY (or NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY).",
+    );
+  }
 
-	return key;
+  return key;
 }

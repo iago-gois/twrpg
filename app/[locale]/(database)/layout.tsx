@@ -1,6 +1,6 @@
 import { Sidebar } from "@/components/layout/sidebar";
 
-export default function DatabaseLayout({ children }: { children: React.ReactNode }) {
+export default function DatabaseShellLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex min-h-[calc(100vh-3.5rem)]">
       <Sidebar />
