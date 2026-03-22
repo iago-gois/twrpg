@@ -23,18 +23,22 @@ export const PRIMARY_NAV_ITEMS = [
   { key: "guides", href: "/database/guides" },
 ] as const;
 
-export const DATABASE_SECTIONS = [
-  { key: "classes", icon: "Swords" },
-  { key: "builds", icon: "Hammer" },
-  { key: "items", icon: "Package" },
-  { key: "recipes", icon: "ScrollText" },
-  { key: "skills", icon: "Zap" },
-  { key: "monsters", icon: "Bug" },
-  { key: "bosses", icon: "Skull" },
-  { key: "dungeons", icon: "Castle" },
-  { key: "npcs", icon: "Users" },
-  { key: "quests", icon: "MapPin" },
-  { key: "guides", icon: "BookOpen" },
+export const SIDEBAR_SECTIONS = [
+  {
+    id: "home",
+    titleKey: "sectionHome",
+    items: [{ key: "home", icon: "House", href: "/" }],
+  },
+  {
+    id: "database",
+    titleKey: "sectionDatabase",
+    items: [
+      { key: "classes", icon: "Swords", href: "/database/classes" },
+      { key: "items", icon: "Package", href: "/database/items" },
+      { key: "monsters", icon: "Bug", href: "/database/monsters" },
+    ],
+  },
 ] as const;
 
-export type DatabaseSection = (typeof DATABASE_SECTIONS)[number]["key"];
+export type SidebarSection = (typeof SIDEBAR_SECTIONS)[number];
+export type SidebarItem = SidebarSection["items"][number];
