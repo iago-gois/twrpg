@@ -3,7 +3,7 @@ import { Link } from "@/i18n/navigation";
 
 export default function HomePage() {
   const t = useTranslations("home");
-  const nav = useTranslations("nav");
+  const sidebar = useTranslations("sidebar");
 
   return (
     <div>
@@ -17,19 +17,19 @@ export default function HomePage() {
             href="/database/classes"
             className="rounded-md border px-4 py-2 text-sm font-medium transition-colors hover:bg-accent"
           >
-            {nav("classes")}
+            {sidebar("classes")}
           </Link>
           <Link
             href="/database/items"
             className="rounded-md border px-4 py-2 text-sm font-medium transition-colors hover:bg-accent"
           >
-            {nav("items")}
+            {sidebar("items")}
           </Link>
           <Link
             href="/database/monsters"
             className="rounded-md border px-4 py-2 text-sm font-medium transition-colors hover:bg-accent"
           >
-            {nav("monsters")}
+            {sidebar("monsters")}
           </Link>
         </div>
       </div>
