@@ -70,6 +70,10 @@ export function Sidebar() {
             </div>
           ))}
         </nav>
+        <div className="border-t px-4 py-3 text-[11px] leading-relaxed text-muted-foreground">
+          <p>TWRPG is a Warcraft III custom map.</p>
+          <p className="mt-1 font-semibold text-foreground">This is a fan-made database.</p>
+        </div>
       </div>
     );
   }
